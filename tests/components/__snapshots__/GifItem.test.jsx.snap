@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en GifItem Pruebas en <GifItem/> 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="The batman"
+      src="https://thebatman.com/batman.jpg"
+    />
+    <p>
+      The batman
+    </p>
+  </div>
+</div>
+`;
