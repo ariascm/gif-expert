@@ -1,12 +1,59 @@
-# React + Vite
+# 🖼️ GifExpertApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de búsqueda de GIFs utilizando la API de [Giphy](https://giphy.com/), construida con **React**.
 
-Currently, two official plugins are available:
+## 🚀 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Accede a la app desplegada en GitHub Pages:  
+👉 [https://ariascm.github.io/react-gif-expert](https://ariascm.github.io/react-gif-expert)
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React (v18)
+- 📦 Vite
+- 🧪 Testing Library + Jest
+- 🎨 CSS / Animaciones simples
+- 🔍 API de Giphy
+
+## 📷 Captura
+
+![Captura de la aplicación](./src/images/image.png)
+
+## 📁 Estructura del proyecto
+
+    src/
+    ├── components/
+    ├── helpers/
+    ├── hooks/
+    ├── tests/
+    └── App.jsx
+
+    
+## ⚙️ Instalación
+
+1. Clona el repositorio:
+
+git clone https://github.com/ariascm/react-gif-expert.git
+
+2. Instala las dependencias:
+
+yarn install
+
+3. Ejecuta la app en desarrollo:
+
+yarn dev
+
+## 🧪 Tests
+
+Para ejecutar las pruebas unitarias:
+yarn test
+
+## 🧩 Funcionalidades
+
+- Buscar GIFs por categoría
+- Mostrar múltiples resultados simultáneamente
+- Animaciones en la carga de imágenes
+- Almacenamiento de historial de búsqueda
+
+🧑‍💻 Autor
+Creado por Cristian Arias como parte del curso de React de Fernando Herrera.
