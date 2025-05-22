@@ -7,7 +7,7 @@ describe('Test en <AddCategory/>', () => {
 
         const inputValue = 'Dc Comics'
 
-        render(<AddCategory onNewCategory={() => { }} />)   //el prop espera una función
+        render(<AddCategory onNewCategory={() => { }} />)
         const input = screen.getByRole('textbox')
 
         fireEvent.input(input, { target: { value: inputValue } })
@@ -19,22 +19,21 @@ describe('Test en <AddCategory/>', () => {
 
         const inputValue = "DC Comics"
 
-        //crea funcion mock y evaluamos el comportamiento (la cual es enviada originalmente al componente padre)
-        //sin necesidad de ver que se ejecuta en el padre, solamente evaluamos que sea enviada, que se ejecute ciertas veces, etc
         const onNewCategory = jest.fn()
 
-        render(<AddCategory onNewCategory={onNewCategory} />)   //enviamos la funcion mock de jest
-        const input = screen.getByRole('textbox')
-        const form = screen.getByRole('form')  //debo agregar un aria-label en el elemento para que sea reconocido
+        render(<AddCategory onNewCategory={onNewCategory} />)
 
-        fireEvent.input(input, { target: { value: inputValue } })  //useState input = "Dc comics"
-        fireEvent.submit(form)      //onSubmit input = ''
-        // screen.debug()
+        const input = screen.getByRole('textbox')
+        const form = screen.getByRole('form') 
+
+        fireEvent.input(input, { target: { value: inputValue } })  
+        fireEvent.submit(form)
+        
         expect(input.value).toBe('')
 
-        expect(onNewCategory).toHaveBeenCalled()    //que haya sido llamada
-        expect(onNewCategory).toHaveBeenCalledTimes(1)  //que se llame solo una vez
-        expect(onNewCategory).toHaveBeenCalledWith(inputValue)  //llamada con el valor del arg inputValue
+        expect(onNewCategory).toHaveBeenCalled()    
+        expect(onNewCategory).toHaveBeenCalledTimes(1) 
+        expect(onNewCategory).toHaveBeenCalledWith(inputValue)
 
     })
 
