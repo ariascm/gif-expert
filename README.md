@@ -1,4 +1,4 @@
-# 🖼️ GifExpertApp
+# 🖼️ Gif Expert
 
 Aplicación de búsqueda de GIFs utilizando la API de [Giphy](https://giphy.com/), construida con **React**.
 
@@ -33,7 +33,7 @@ Accede a la app desplegada en GitHub Pages:
 
 1. Clona el repositorio:
 
-git clone https://github.com/ariascm/react-gif-expert.git
+git clone https://github.com/ariascm/gif-expert.git
 
 2. Instala las dependencias:
 
