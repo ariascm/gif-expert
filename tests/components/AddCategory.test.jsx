@@ -13,8 +13,6 @@ describe('Test en <AddCategory/>', () => {
         fireEvent.input(input, { target: { value: inputValue } })
 
         expect(input.value).toBe(inputValue)
-        // screen.debug()
-
     })
 
     test('debe llamar onNewCategory si el input tiene un valor', () => {

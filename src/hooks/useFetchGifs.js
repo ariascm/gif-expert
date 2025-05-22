@@ -12,10 +12,6 @@ export const useFetchGifs = (category) => {
         setIsLoading(false)
     }
 
-
-    // Solo va a ejecutarse la primera vez que se renderiza el componente.
-    // Aún si tuviese alguna constante con useState aqui, al renderizarse el componente, 
-    // no volveria a ejecutar el useEffect, a menos que agreguemos alguna dependencia en []
     useEffect(() => {
         getImages()
     }, [])

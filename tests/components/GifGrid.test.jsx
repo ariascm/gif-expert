@@ -4,7 +4,6 @@ import { useFetchGifs } from "../../src/hooks/useFetchGifs"
 
 jest.mock("../../src/hooks/useFetchGifs")
 
-
 describe('Prueba en <GifGrid/>', () => {
 
     const category = 'Marvel'
@@ -17,7 +16,7 @@ describe('Prueba en <GifGrid/>', () => {
         })
 
         render(<GifGrid category={category} />)
-        // screen.debug()
+
         expect(screen.getByText('cargando...'))
         expect(screen.getByText(category))
 
@@ -40,10 +39,9 @@ describe('Prueba en <GifGrid/>', () => {
             images,
             isLoading: false
         })
+
         render(<GifGrid category={category} />)
-        // screen.debug()
+
         expect(screen.getAllByRole('img').length).toBe(2)
-
     })
-
 })

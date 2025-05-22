@@ -8,7 +8,6 @@ export const GifExpertApp = () => {
     const onAddCategory = (newCategory) => {
         if (categories.includes(newCategory)) return;
 
-        // NO usar PUSH, ya que no modificamos la constante, creamos un nuevo objeto
         setCategories([newCategory, ...categories])
     }
 
@@ -28,7 +27,6 @@ export const GifExpertApp = () => {
                     />
                 ))
             }
-
         </>
     )
 }
